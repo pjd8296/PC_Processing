@@ -20,6 +20,7 @@ Finally, the point cloud is translated so that centroid is aligned with the orig
 ![newplot (8)](https://github.com/pjd8296/PC_Processing/assets/61617528/76d04f73-0f45-4bd1-9a4a-a02aa055e962)
 
 ### Applied random transformation to the original point cloud
+Applied random transformation to the PC and it was tested on the algorithms for alignment and translation.
 
 ![newplot (11)](https://github.com/pjd8296/PC_Processing/assets/61617528/e462e7d9-8abb-4a36-972c-54bee404e7e4)
 
@@ -36,5 +37,5 @@ Finally, the point cloud is translated so that centroid is aligned with the orig
 ![newplot (10)](https://github.com/pjd8296/PC_Processing/assets/61617528/dc187251-0a84-4bc7-8332-2641628dc956)
 
 ## Weak points
-* In my view, the algorithm for re-aligning the point cloud is not robust. I am calculating the normal from a single point, but having an average of the normals from all the points in the plane would have made the algorithm more robust.
+* In my view, the algorithm for re-aligning the point cloud is not robust. I am calculating the normal from a single point, but having an average of the normals from all the points in the plane would have made the algorithm more robust. Also, while testing, I found that the code was failing in the cases where rotation transformation was applied to all three axes. I need to dig deeper to resolve this issue.
 * The quality of mesh reconstruction is not up to the mark. It contains a lot of noise. I need to investigate it thoroughly for smoother surface reconstruction.
