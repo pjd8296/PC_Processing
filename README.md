@@ -34,3 +34,7 @@ Finally, the point cloud is translated so that centroid is aligned with the orig
 ### Finally converted it to mesh
 
 ![newplot (10)](https://github.com/pjd8296/PC_Processing/assets/61617528/dc187251-0a84-4bc7-8332-2641628dc956)
+
+## Weak points
+* In my view, the algorithm for re-aligning the point cloud is not robust. I am calculating the normal from a single point, but having an average of the normals from all the points in the plane would have made the algorithm more robust.
+* The quality of mesh reconstruction is not up to the mark. It contains a lot of noise. I need to investigate it thoroughly for smoother surface reconstruction.
